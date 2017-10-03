@@ -79,6 +79,8 @@ namespace Week2_Day1
             Console.WriteLine(exampleStringArray[index]);
             //tells you what word exactly in index 5
             Console.WriteLine("This is the last index " + (exampleStringArray.Length - 1));
+            //shorthand
+            Console.WriteLine(exampleStringArray[exampleStringArray.Length - 1]);
 
 
             ////do it #4
@@ -90,6 +92,16 @@ namespace Week2_Day1
             //favNum[2] = 24;
             //favNum[3] = 48;
             //favNum[4] = 42;
+            Console.WriteLine("Please enter the size of the array.");
+            int arraySize = int.Parse(Console.ReadLine());
+            int[] newArray = new int[arraySize];
+            Console.WriteLine("The array is of length " + newArray.Length + ".");
+
+            string[] birthMonths = { "October", "July", "October", "May" };
+
+
+
+            //DAY 2 ---------- LOOPS
 
 
 
