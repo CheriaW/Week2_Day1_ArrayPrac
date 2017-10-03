@@ -68,56 +68,69 @@ namespace Week2_Day1
             //Console.WriteLine(sevenDays.Length);
 
 
-            char[] lastName = { 'W', 'H', 'I', 'T', 'E' };
-            Console.WriteLine(lastName.Length);
+            //char[] lastName = { 'W', 'H', 'I', 'T', 'E' };
+            //Console.WriteLine(lastName.Length);
 
-            string[] exampleStringArray = { "This", "is", "an", "array", "of", "words" };
-            //Console.WriteLine(exampleStringArray.Length);
-            int index = exampleStringArray.Length;
-            index = index - 2;
+            //string[] exampleStringArray = { "This", "is", "an", "array", "of", "words" };
+            ////Console.WriteLine(exampleStringArray.Length);
+            //int index = exampleStringArray.Length;
+            //index = index - 2;
 
-            Console.WriteLine(exampleStringArray[index]);
-            //tells you what word exactly in index 5
-            Console.WriteLine("This is the last index " + (exampleStringArray.Length - 1));
-            //shorthand
-            Console.WriteLine(exampleStringArray[exampleStringArray.Length - 1]);
+            //Console.WriteLine(exampleStringArray[index]);
+            ////tells you what word exactly in index 5
+            //Console.WriteLine("This is the last index " + (exampleStringArray.Length - 1));
+            ////shorthand
+            //Console.WriteLine(exampleStringArray[exampleStringArray.Length - 1]);
 
 
-            ////do it #4
-            //string[] firstNames = { "Cheria", "Chris", "Taniesha", "Niema", "Tre", "Demetrius" };
-            //Console.WriteLine(firstNames[5]);
-            //int[] favNum = new int[5];
-            //favNum[0] = 2;
-            //favNum[1] = 4;
-            //favNum[2] = 24;
-            //favNum[3] = 48;
-            //favNum[4] = 42;
+            
             //Console.WriteLine("Please enter the size of the array.");
             //int arraySize = int.Parse(Console.ReadLine());
             //int[] newArray = new int[arraySize];
             //Console.WriteLine("The array is of length " + newArray.Length + ".");
 
-            string[] birthMonths = { "October", "July", "October", "May" };
-            Console.WriteLine(Array.IndexOf(birthMonths, "October"));
-            //it will just return the first occurance of "october"
-            //entering an element that isnt included in the string will result in a "-1"
-            int[] numbers = { 2, 3, 9, 4, 3, 4, 6, 5 };
-            Console.WriteLine(Array.LastIndexOf(numbers, 4));
-            Console.WriteLine(Array.LastIndexOf(numbers, 5));
+            //string[] birthMonths = { "October", "July", "October", "May" };
+            //Console.WriteLine(Array.IndexOf(birthMonths, "October"));
+            ////it will just return the first occurance of "october"
+            ////entering an element that isnt included in the string will result in a "-1"
+            //int[] numbers = { 2, 3, 9, 4, 3, 4, 6, 5 };
+            //Console.WriteLine(Array.LastIndexOf(numbers, 4));
+            //Console.WriteLine(Array.LastIndexOf(numbers, 5));
 
-            Array.Reverse(numbers);
-            //flips the whole array (mirror image)
-            Console.WriteLine(numbers[0]);
-            //will return '5' because the array had been switched
+            //Array.Reverse(numbers);
+            ////flips the whole array (mirror image)
+            //Console.WriteLine(numbers[0]);
+            ////will return '5' because the array had been switched
 
-            Array.Sort(numbers);
-            Console.WriteLine(numbers[0]);
-            Console.WriteLine(numbers[numbers.Length - 1]);
-
-
+            //Array.Sort(numbers);
+            //Console.WriteLine(numbers[0]);
+            //Console.WriteLine(numbers[numbers.Length - 1]);
 
 
+            //do it #4
+            string[] firstNames = { "Cheria", "Chris", "Taniesha", "Niema", "Tre", "Demetrius" };
+            Console.WriteLine(Array.IndexOf(firstNames, "Demetrius"));
 
+
+            int[] luckyNum = { 2, 4, 24, 48, 100, 2, 4, 24, 48, 100 };
+            Console.WriteLine(Array.IndexOf(luckyNum, 48));
+            Console.WriteLine(Array.LastIndexOf(luckyNum, 100));
+
+            char[] letters = { 'a', 'b', 'c', 'd', 'e', 'f' };
+            Console.WriteLine(letters[0]);
+            Array.Reverse(letters);
+            Console.WriteLine(letters[0]);
+
+            string[] studentNames = { "Cheria", "JD", "Kevin", "Katie", "Kathleen", "Brad" };
+            Array.Sort(studentNames);
+            Console.WriteLine(studentNames[0]);
+            Console.WriteLine(studentNames[studentNames.Length - 1]);
+
+
+            double[] favNum = { 48, 11, 42, 7, 5, 3, 8, 64, 32, 788};
+            Array.Sort(favNum);
+            Console.WriteLine(favNum[0]);
+            Console.WriteLine(favNum[favNum.Length - 1]);
 
             //DAY 2 ---------- LOOPS
 
