@@ -92,12 +92,30 @@ namespace Week2_Day1
             //favNum[2] = 24;
             //favNum[3] = 48;
             //favNum[4] = 42;
-            Console.WriteLine("Please enter the size of the array.");
-            int arraySize = int.Parse(Console.ReadLine());
-            int[] newArray = new int[arraySize];
-            Console.WriteLine("The array is of length " + newArray.Length + ".");
+            //Console.WriteLine("Please enter the size of the array.");
+            //int arraySize = int.Parse(Console.ReadLine());
+            //int[] newArray = new int[arraySize];
+            //Console.WriteLine("The array is of length " + newArray.Length + ".");
 
             string[] birthMonths = { "October", "July", "October", "May" };
+            Console.WriteLine(Array.IndexOf(birthMonths, "October"));
+            //it will just return the first occurance of "october"
+            //entering an element that isnt included in the string will result in a "-1"
+            int[] numbers = { 2, 3, 9, 4, 3, 4, 6, 5 };
+            Console.WriteLine(Array.LastIndexOf(numbers, 4));
+            Console.WriteLine(Array.LastIndexOf(numbers, 5));
+
+            Array.Reverse(numbers);
+            //flips the whole array (mirror image)
+            Console.WriteLine(numbers[0]);
+            //will return '5' because the array had been switched
+
+            Array.Sort(numbers);
+            Console.WriteLine(numbers[0]);
+            Console.WriteLine(numbers[numbers.Length - 1]);
+
+
+
 
 
 
